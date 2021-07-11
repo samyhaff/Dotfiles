@@ -1,0 +1,71 @@
+#include "/home/samy/.config/colorschemes/spacegray"
+
+! terminal colors
+
+*.foreground:  FOREGROUND
+*.background:  BACKGROUND
+! *.cursorColor: CURSOR
+!
+! Black
+*.color0:      COLOR0
+*.color8:      COLOR8
+!
+! Red
+*.color1:      COLOR1
+*.color9:      COLOR9
+!
+! Green
+*.color2:      COLOR2
+*.color10:     COLOR10
+!
+! Yellow
+*.color3:      COLOR3
+*.color11:     COLOR11
+!
+! Blue
+*.color4:      COLOR4
+*.color12:     COLOR12
+!
+! Magenta
+*.color5:      COLOR5
+*.color13:     COLOR13
+!
+! Cyan
+*.color6:      COLOR6
+*.color14:     COLOR14
+!
+! White
+*.color7:     COLOR7
+*.color15:    COLOR15
+!
+! dwm colors
+dwm.normbordercolor: COLOR8
+dwm.selbordercolor:  COLOR4
+dwm.normbgcolor:     BACKGROUND
+dwm.normfgcolor:     FOREGROUND
+dwm.selbgcolor:      COLOR4
+dwm.selfgcolor:      FOREGROUND
+
+! dmenu colors 
+dmenu.background:    BACKGROUND
+dmenu.foreground:    FOREGROUND
+dmenu.selbackground: COLOR4
+dmenu.selforeground: BACKGROUND
+
+! dunst colors 
+dunst.foreground: FOREGROUND
+dunst.background: BACKGROUND
+dunst.frame:      COLOR4
+
+! zathura colors 
+zathura.background: FOREGROUND
+zathura.foreground: BACKGROUND
+
+Xft.dpi: 144
+Xcursor.size: 16
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault

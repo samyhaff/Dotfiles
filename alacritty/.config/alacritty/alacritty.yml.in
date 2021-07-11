@@ -1,0 +1,51 @@
+# Colors
+colors:
+  # Default colors
+  primary:
+    background: %clbg%
+    foreground: %clfg%
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: %clfg%
+    cursor: %clbg%
+
+  # Normal colors
+  normal:
+    black:   %cl0%
+    red:     %cl1%
+    green:   %cl2%
+    yellow:  %cl3%
+    blue:    %cl4%
+    magenta: %cl5%
+    cyan:    %cl6%
+    white:   %cl7%
+
+  # Bright colors
+  bright:
+    black:   %cl8%
+    red:     %cl9%
+    green:   %cl10%
+    yellow:  %cl11%
+    blue:    %cl12%
+    magenta: %cl13%
+    cyan:    %cl14%
+    white:   %cl15%
+
+font:
+  size: 9.5
+  normal:
+    family: Fira Code
+    style: regular
+  bold:
+    family: Fira Code
+    style: bold
+  italic:
+    family: Fira Code
+    style: italic
+
+window:
+  padding:
+    x: 4
+    y: 4
+  dynamic_title: true
