@@ -23,6 +23,8 @@ fg=$(colorsXresources dunst.foreground)
 bg=$(colorsXresources dunst.background)
 fr=$(colorsXresources dunst.frame)
 
+[ $(xrandr | grep "HDMI-1 connected " | awk '{ print$1 }') = "HDMI-1" ] && homemonitor
+
 nm-applet &
 dunst -config ~/.config/dunst/dunstrc -lb "$bg" -nb "$bg" -cb "$bg" -lf "$fg" -bf "fg" -cf "$fg" -nf "$fg" -frame_color "$fr" &
 discord &
@@ -33,8 +35,6 @@ slstatus &
 ~/.fehbg &
 # calcurse --daemon &
 picom &
-
-[ $(xrandr | grep "HDMI-1 connected " | awk '{ print$1 }') = "HDMI-1" ] && homemonitor
 
 # if dwm exits 0, restart -- this allows hot reloading of config.h
 while type dwm >/dev/null ; do dwm && continue || break ; done

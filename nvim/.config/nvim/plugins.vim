@@ -1,4 +1,5 @@
 call plug#begin('~/.config/nvim/plugged')
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'lervag/vimtex'
 Plug 'ryanoasis/vim-devicons' " vimscript
 Plug 'junegunn/goyo.vim'
@@ -12,7 +13,8 @@ Plug 'fatih/vim-go'
 Plug 'tpope/vim-commentary'
 Plug 'norcalli/snippets.nvim'
 Plug 'mhinz/vim-startify'
-Plug 'arcticicestudio/nord-vim'
+" Plug 'arcticicestudio/nord-vim'
+Plug 'shaunsingh/nord.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'sheerun/vim-polyglot'

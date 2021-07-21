@@ -14,3 +14,4 @@ luafile ~/.config/nvim/lsp/clangd-lsp.lua
 luafile ~/.config/nvim/lsp/bash-lsp.lua
 luafile ~/.config/nvim/lsp/rust-analyzer-lsp.lua
 luafile ~/.config/nvim/lsp/gopls-lsp.lua
+luafile ~/.config/nvim/lsp/texlab-lsp.lua
