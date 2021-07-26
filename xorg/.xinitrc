@@ -4,7 +4,7 @@ systemctl --user import-environment DISPLAY
 # setxkbmap -option caps:escape &
 setxkbmap -option 'caps:ctrl_modifier' & 
 xcape -e 'Caps_Lock=Escape' &
-xset r rate 300 50 &
+xset r rate 200 50 &
 xset dpms 0 0 0 &
 xset s 0 &
 xrdb -merge $HOME/.Xresources
@@ -27,7 +27,6 @@ fr=$(colorsXresources dunst.frame)
 
 nm-applet &
 dunst -config ~/.config/dunst/dunstrc -lb "$bg" -nb "$bg" -cb "$bg" -lf "$fg" -bf "fg" -cf "$fg" -nf "$fg" -frame_color "$fr" &
-discord &
 firefox &
 TERMINAL &
 xbanish &
