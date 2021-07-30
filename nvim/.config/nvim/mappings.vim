@@ -27,6 +27,9 @@ map <leader>gs :G<CR>
 map <leader>gc :Git commit<CR>
 map <leader>gp :Git push<CR>
 map <leader>c :Colors<CR>
+noremap Y y$
+noremap n nzz
+noremap N Nzz
 
 function! Preview()
         execute "! zathura /tmp/op.pdf &"
