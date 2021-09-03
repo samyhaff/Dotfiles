@@ -49,4 +49,9 @@ Plug 'jacoborus/tender.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'nekonako/xresources-nvim'
 Plug 'dylanaraps/wal.vim'
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'pradyungn/Mountain', {'rtp': 'vim'}
+Plug 'srcery-colors/srcery-vim'
+Plug 'bluz71/vim-moonfly-colors'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()

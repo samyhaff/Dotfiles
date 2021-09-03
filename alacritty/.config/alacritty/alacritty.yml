@@ -33,15 +33,15 @@ colors:
     white:   '0xECEFF4'
 
 font:
-  size: 9.5
+  size: 12
   normal:
-    family: Fira Code
+    family: Terminus
     style: regular
   bold:
-    family: Fira Code
+    family: Terminus
     style: bold
   italic:
-    family: Fira Code
+    family: Terminus
     style: italic
 
 window:

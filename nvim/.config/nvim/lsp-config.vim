@@ -8,7 +8,7 @@ nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 luafile ~/.config/nvim/compe-config.lua
-luafile ~/.config/nvim/lsp/python-lsp.lua
+" luafile ~/.config/nvim/lsp/python-lsp.lua
 luafile ~/.config/nvim/lsp/html-lsp.lua
 luafile ~/.config/nvim/lsp/clangd-lsp.lua
 luafile ~/.config/nvim/lsp/bash-lsp.lua

@@ -27,6 +27,7 @@ fr=$(colorsXresources dunst.frame)
 
 nm-applet &
 dunst -config ~/.config/dunst/dunstrc -lb "$bg" -nb "$bg" -cb "$bg" -lf "$fg" -bf "fg" -cf "$fg" -nf "$fg" -frame_color "$fr" &
+discord &
 firefox &
 TERMINAL &
 xbanish &

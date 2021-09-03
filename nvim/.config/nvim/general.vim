@@ -29,6 +29,6 @@ set completeopt=menuone,noselect
 set shortmess+=c
 set splitbelow splitright
 set termguicolors
-colorscheme spaceduck
+colorscheme jellybeans
 set bg=dark
 let g:vimsyn_embed= 'l'
