@@ -19,6 +19,8 @@ export TERMINAL="st"
 export READER="zathura"
 export PAGER="less"
 
+export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
+
 fg=$(colorsXresources dunst.foreground)
 bg=$(colorsXresources dunst.background)
 fr=$(colorsXresources dunst.frame)

@@ -18,7 +18,7 @@ Plug 'shaunsingh/nord.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'sheerun/vim-polyglot'
-Plug 'joshdick/onedark.vim'
+Plug 'navarasu/onedark.nvim'
 Plug 'nelsyeung/twig.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
