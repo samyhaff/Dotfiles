@@ -100,6 +100,9 @@ alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selectio
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
+# Latex preamble TP DATASIM
+export TEXINPUTS=".:~/Notes/cours/DATASIM_TP/packages:"
+
 # pluggins
 source ~/.config/lf/icons
 source ./.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

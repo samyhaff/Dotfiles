@@ -54,4 +54,6 @@ Plug 'pradyungn/Mountain', {'rtp': 'vim'}
 Plug 'srcery-colors/srcery-vim'
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'tomasiser/vim-code-dark'
+Plug 'wojciechkepka/vim-github-dark'
+" Plug 'chriskempson/base16-vim'
 call plug#end()
