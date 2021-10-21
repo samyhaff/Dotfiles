@@ -35,4 +35,4 @@ set guifont=Monaco:h16
 
 let g:onedark_style = 'darker'
 
-colorscheme dracula
+colorscheme codedark

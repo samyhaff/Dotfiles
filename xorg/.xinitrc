@@ -21,14 +21,10 @@ export PAGER="less"
 
 export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
 
-fg=$(colorsXresources dunst.foreground)
-bg=$(colorsXresources dunst.background)
-fr=$(colorsXresources dunst.frame)
-
 [ $(xrandr | grep "HDMI-1 connected " | awk '{ print$1 }') = "HDMI-1" ] && homemonitor
 
 nm-applet &
-dunst -config ~/.config/dunst/dunstrc -lb "$bg" -nb "$bg" -cb "$bg" -lf "$fg" -bf "fg" -cf "$fg" -nf "$fg" -frame_color "$fr" &
+dunst &
 discord &
 firefox &
 TERMINAL &
