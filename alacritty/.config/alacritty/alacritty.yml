@@ -33,15 +33,15 @@ colors:
     white:   '0xECEFF4'
 
 font:
-  size: 12
+  size: 11
   normal:
-    family: Terminus
+    family: DejaVu Sans Mono
     style: regular
   bold:
-    family: Terminus
+    family: DejaVu Sans Mono
     style: bold
   italic:
-    family: Terminus
+    family: DejaVu Sans Mono
     style: italic
 
 window:

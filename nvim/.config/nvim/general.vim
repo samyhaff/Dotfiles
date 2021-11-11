@@ -33,6 +33,4 @@ set bg=dark
 let g:vimsyn_embed= 'l'
 set guifont=Monaco:h16
 
-let g:onedark_style = 'darker'
-
-colorscheme codedark
+colorscheme xresources

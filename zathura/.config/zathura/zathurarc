@@ -1,9 +1,8 @@
-set recolor
-set recolor-darkcolor "#D8DEE9"
-set recolor-lightcolor "#1D1F21"
-set inputbar-fg "#D8DEE9"
-set inputbar-bg "#1D1F21"
-set statusbar-fg "#D8DEE9"
-set statusbar-bg "#1D1F21"
+set recolor-darkcolor "#7cdeec"
+set recolor-lightcolor "#0f0c22"
+set inputbar-fg "#7cdeec"
+set inputbar-bg "#0f0c22"
+set statusbar-fg "#7cdeec"
+set statusbar-bg "#0f0c22"
 map i recolor
 set selection-clipboard clipboard
