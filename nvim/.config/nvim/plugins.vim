@@ -3,7 +3,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'lervag/vimtex'
 Plug 'ryanoasis/vim-devicons' " vimscript
 Plug 'junegunn/goyo.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ap/vim-css-color'
@@ -43,7 +43,6 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'preservim/vim-colors-pencil'
 Plug 'rakr/vim-two-firewatch'
 Plug 'jonathanfilip/vim-lucius'
-Plug 'zacanger/angr.vim'
 Plug 'axvr/photon.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'mhartington/oceanic-next'
