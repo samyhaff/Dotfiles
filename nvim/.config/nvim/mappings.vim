@@ -30,7 +30,7 @@ map <leader>c :Colors<CR>
 noremap Y y$
 noremap n nzz
 noremap N Nzz
-noremap K i<cr><esc>k$
+" noremap K i<cr><esc>k$
 
 function! Preview()
         execute "! zathura /tmp/op.pdf &"

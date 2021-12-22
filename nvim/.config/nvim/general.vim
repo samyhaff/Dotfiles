@@ -33,4 +33,4 @@ set bg=dark
 let g:vimsyn_embed= 'l'
 set guifont=Monaco:h16
 
-colorscheme xresources
+colorscheme tokyonight

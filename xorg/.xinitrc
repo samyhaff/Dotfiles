@@ -1,7 +1,6 @@
 #!/bin/sh
 
 systemctl --user import-environment DISPLAY
-# setxkbmap -option caps:escape &
 setxkbmap -option 'caps:ctrl_modifier' & 
 xcape -e 'Caps_Lock=Escape' &
 xset r rate 200 50 &
@@ -20,8 +19,9 @@ export READER="zathura"
 export PAGER="less"
 
 export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
+export QT_SCALE_FACTOR=0.7
 
-[ $(xrandr | grep "HDMI-1 connected " | awk '{ print$1 }') = "HDMI-1" ] && homemonitor
+[ $(xrandr | grep "HDMI-1 connected " | awk '{ print$1 }') = "HDMI-1" ] && home
 
 nm-applet &
 dunst &
@@ -31,8 +31,6 @@ TERMINAL &
 xbanish &
 slstatus &
 ~/.fehbg &
-# calcurse --daemon &
 picom &
 
-# if dwm exits 0, restart -- this allows hot reloading of config.h
 while type dwm >/dev/null ; do dwm && continue || break ; done
