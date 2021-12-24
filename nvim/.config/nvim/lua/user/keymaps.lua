@@ -27,7 +27,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 keymap("n", "<leader>s", ":setlocal spell spelllang=fr<CR>", opts)
 keymap("n", "<leader>a", "<C-^>", opts)
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":Lex 20<cr>", opts)
 
 keymap("n", "Y", "y$", opts)
 keymap("n", "n", "nzz", opts)

@@ -32,7 +32,6 @@ opt.signcolumn = "yes"
 opt.wrap = false
 opt.scrolloff = 8
 opt.sidescrolloff = 8
-opt.undodir = "~/.config/nvim/undodir"
 opt.incsearch = true
 opt.hlsearch = false
 opt.bg = "dark"
@@ -42,29 +41,3 @@ opt.shortmess:append "c"
 cmd [[au BufWritePre * :%s/\s\+$//e]]
 cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]
-
--- disable some builtin vim plugins
-local disabled_built_ins = {
-   "2html_plugin",
-   "getscript",
-   "getscriptPlugin",
-   "gzip",
-   "logipat",
-   "netrw",
-   "netrwPlugin",
-   "netrwSettings",
-   "netrwFileHandlers",
-   "matchit",
-   "tar",
-   "tarPlugin",
-   "rrhelper",
-   "spellfile_plugin",
-   "vimball",
-   "vimballPlugin",
-   "zip",
-   "zipPlugin",
-}
-
-for _, plugin in pairs(disabled_built_ins) do
-   g["loaded_" .. plugin] = 1
-end
