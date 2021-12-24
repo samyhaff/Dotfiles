@@ -32,5 +32,6 @@ set termguicolors
 set bg=dark
 let g:vimsyn_embed= 'l'
 set guifont=Monaco:h16
+set showtabline=2
 
-colorscheme tokyonight
+colorscheme onedark
