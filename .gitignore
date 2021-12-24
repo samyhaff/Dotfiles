@@ -1,3 +1,2 @@
-nvim/.config/nvim/undodir
-nvim/.config/nvim/plugged
-*_old
+nvim/.config/nvim_old/undodir
+nvim/.config/nvim_old/plugged
