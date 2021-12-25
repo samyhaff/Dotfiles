@@ -51,6 +51,16 @@ return packer.startup(function(use)
       end
   }
 
+  -- treesitter
+  use {
+      "nvim-treesitter/nvim-treesitter",
+      run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
+
+  -- telescope
+  use 'nvim-telescope/telescope.nvim'
+
   -- colorschemes
   use 'navarasu/onedark.nvim'
   use 'folke/tokyonight.nvim'
