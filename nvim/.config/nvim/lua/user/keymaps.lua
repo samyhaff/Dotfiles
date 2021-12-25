@@ -33,6 +33,12 @@ keymap("n", "n", "nzz", opts)
 keymap("n", "N", "Nzz", opts)
 
 -- telescope
-keymap("n", "<leader>o", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>r", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<leader>c", "<cmd>Telescope colorscheme<cr>", opts)
+keymap("n", "<leader>o", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>r", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>c", "<cmd>Telescope colorscheme<CR>", opts)
+
+-- buffer_line
+keymap("n", "<TAB>", ":BufferLineCycleNext<CR>", opts)
+keymap("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opts)
+keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
+keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
