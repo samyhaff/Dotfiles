@@ -1,3 +1,4 @@
-nvim/.config/nvim_old/undodir
-nvim/.config/nvim_old/plugged
+nvim/.config/nvim_old/undodir/
+nvim/.config/nvim_old/plugged/
 nvim/.config/nvim/plugin/packer_compiled.lua
+nvim/.config/nvim/plugin/
