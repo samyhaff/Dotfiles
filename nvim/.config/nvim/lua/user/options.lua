@@ -1,6 +1,5 @@
 local opt = vim.opt
 local cmd = vim.cmd
-local g = vim.g
 
 -- :help options
 opt.title = true
@@ -37,7 +36,9 @@ opt.hlsearch = false
 opt.bg = "dark"
 opt.showmatch = true
 opt.shortmess:append "c"
+opt.list = true
+opt.listchars:append("eol:↴")
 
 cmd [[au BufWritePre * :%s/\s\+$//e]]
-cmd "set whichwrap+=<,>,[,],h,l"
+-- cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]

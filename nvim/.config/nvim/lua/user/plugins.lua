@@ -41,6 +41,7 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- general
+  use 'kyazdani42/nvim-web-devicons'
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
@@ -50,11 +51,10 @@ return packer.startup(function(use)
           require('Comment').setup()
       end
   }
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
+  use 'nvim-lualine/lualine.nvim'
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+  use 'glepnir/dashboard-nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   -- treesitter
   use {
@@ -62,6 +62,9 @@ return packer.startup(function(use)
       run = ":TSUpdate",
   }
   use "p00f/nvim-ts-rainbow"
+  use "windwp/nvim-autopairs"
+  use 'lewis6991/gitsigns.nvim'
+  use 'kyazdani42/nvim-tree.lua'
 
   -- telescope
   use 'nvim-telescope/telescope.nvim'
@@ -73,6 +76,7 @@ return packer.startup(function(use)
   use 'shaunsingh/nord.nvim'
   use 'dracula/vim'
   use 'tomasiser/vim-code-dark'
+  use "rose-pine/neovim"
 
   -- completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
