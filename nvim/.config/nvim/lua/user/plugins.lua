@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   use 'glepnir/dashboard-nvim'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'norcalli/nvim-colorizer.lua'
 
   -- treesitter
   use {
