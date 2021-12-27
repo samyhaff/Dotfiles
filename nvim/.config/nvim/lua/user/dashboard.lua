@@ -52,6 +52,7 @@ vim.g.dashboard_custom_header = {
 vim.g.dashboard_custom_section = {
     a = {description = {'  Find File          '}, command = 'Telescope find_files'},
     d = {description = {'  Search Text        '}, command = 'Telescope live_grep'},
+    c = {description = {'  New File           '}, command = 'DashboardNewFile'},
     b = {description = {'  Recent Files       '}, command = 'Telescope oldfiles'},
     e = {description = {'  Config             '}, command = 'edit ~/.config/nvim/init.lua'},
 }
