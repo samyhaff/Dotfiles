@@ -1,7 +1,7 @@
 #!/bin/sh
 
 systemctl --user import-environment DISPLAY
-setxkbmap -option 'caps:ctrl_modifier' & 
+setxkbmap -option 'caps:ctrl_modifier' &
 xcape -e 'Caps_Lock=Escape' &
 xset r rate 200 50 &
 xset dpms 0 0 0 &
@@ -21,7 +21,7 @@ export PAGER="less"
 export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
 export QT_SCALE_FACTOR=0.7
 
-[ $(xrandr | grep "HDMI-1 connected " | awk '{ print$1 }') = "HDMI-1" ] && home
+xrandr | grep -q "HDMI-1 connected" && home
 
 nm-applet &
 dunst &

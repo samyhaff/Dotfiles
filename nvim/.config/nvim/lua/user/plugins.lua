@@ -78,6 +78,10 @@ return packer.startup(function(use)
   use 'dracula/vim'
   use 'tomasiser/vim-code-dark'
   use "rose-pine/neovim"
+  use({
+      "catppuccin/nvim",
+      as = "catppuccin"
+  })
 
   -- completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
