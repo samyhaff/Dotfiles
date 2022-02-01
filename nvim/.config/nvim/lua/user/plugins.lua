@@ -77,7 +77,6 @@ return packer.startup(function(use)
   use 'shaunsingh/nord.nvim'
   use 'dracula/vim'
   use 'tomasiser/vim-code-dark'
-  use "rose-pine/neovim"
   use({
       "catppuccin/nvim",
       as = "catppuccin"

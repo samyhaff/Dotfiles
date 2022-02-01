@@ -1,5 +1,6 @@
 -- options for some colorschemes
 vim.g.tokyonight_style = "night"
+require('onedark').load()
 
 local colorscheme = "codedark"
 
