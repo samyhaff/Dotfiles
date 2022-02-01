@@ -9,7 +9,7 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/samy/.zshrc'
 
-autoload -Uz compinit 
+autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
@@ -34,8 +34,7 @@ export PAGER="less"
 # colors
 autoload -U colors && colors
 # PS1="%{$fg[blue]%}%~ %{$fg[red]%}$%b "
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[cyan]%}@%{$fg[green]%}%M %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[blue]%}@%{$fg[yellow]%}%M %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[blue]%}@%{$fg[white]%}%M %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # completion
 zstyle ':completion:*' menu select
@@ -86,12 +85,12 @@ export FZF_DEFAULT_OPS="--extende"
 
 # (cat ~/.cache/wal/sequences &)
 
-# fzf 
+# fzf
 export FZF_DEFAULT_OPTS='--border'
 
 setopt autocd
 
-# Navigation 
+# Navigation
 fcd() {
     cd "$(fd --type d | fzf)"
 }
