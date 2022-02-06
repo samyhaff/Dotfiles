@@ -44,8 +44,6 @@ keymap("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opts)
 keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
--- latex
-keymap("n", "<leader>b", ":silent !pdflatex %:r<CR>", opts)
+keymap("n", "<leader>b", ":silent !pandoc % -o %:r.pdf -V geometry:margin=2cm<CR>", opts)
 keymap("n", "<leader>p", ":silent !zathura %:r.pdf &<CR>", opts)
-
 keymap("n", "<leader>f", ":Format<CR>", opts)

@@ -42,3 +42,7 @@ opt.listchars:append("eol:↴")
 cmd [[au BufWritePre * :%s/\s\+$//e]]
 -- cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]
+
+vim.api.nvim_command([[
+autocmd BufWritePost *.tex :silent !pdflatex %:r
+]])
