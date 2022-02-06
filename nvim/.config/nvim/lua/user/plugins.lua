@@ -56,6 +56,8 @@ return packer.startup(function(use)
   use 'glepnir/dashboard-nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'norcalli/nvim-colorizer.lua'
+  use 'junegunn/goyo.vim'
+  use 'lervag/vimtex'
 
   -- treesitter
   use {

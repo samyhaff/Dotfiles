@@ -45,6 +45,7 @@ keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
 -- latex
-keymap("n", "<leader>b", ":!pdflatex %:r<CR>", opts)
+keymap("n", "<leader>b", ":silent !pdflatex %:r<CR>", opts)
+keymap("n", "<leader>p", ":silent !zathura %:r.pdf &<CR>", opts)
 
 keymap("n", "<leader>f", ":Format<CR>", opts)
