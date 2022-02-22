@@ -56,8 +56,6 @@ return packer.startup(function(use)
   use 'glepnir/dashboard-nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'norcalli/nvim-colorizer.lua'
-  use 'junegunn/goyo.vim'
-  use 'lervag/vimtex'
 
   -- treesitter
   use {
@@ -79,10 +77,16 @@ return packer.startup(function(use)
   use 'shaunsingh/nord.nvim'
   use 'dracula/vim'
   use 'tomasiser/vim-code-dark'
-  use({
-      "catppuccin/nvim",
-      as = "catppuccin"
-  })
+  use 'catppuccin/nvim'
+  use 'Shatur/neovim-ayu'
+  use 'nanotech/jellybeans.vim'
+  use 'RRethy/nvim-base16'
+  use 'fenetikm/falcon'
+  use "projekt0n/github-nvim-theme"
+  use 'EdenEast/nightfox.nvim'
+  use 'mangeshrex/everblush.vim'
+  use "rebelot/kanagawa.nvim"
+  use 'marko-cerovac/material.nvim'
 
   -- completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
