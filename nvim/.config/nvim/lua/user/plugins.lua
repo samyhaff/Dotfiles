@@ -56,6 +56,7 @@ return packer.startup(function(use)
   use 'glepnir/dashboard-nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'norcalli/nvim-colorizer.lua'
+  use 'akinsho/toggleterm.nvim'
 
   -- treesitter
   use {
@@ -80,7 +81,6 @@ return packer.startup(function(use)
   use 'catppuccin/nvim'
   use 'Shatur/neovim-ayu'
   use 'nanotech/jellybeans.vim'
-  use 'RRethy/nvim-base16'
   use 'fenetikm/falcon'
   use "projekt0n/github-nvim-theme"
   use 'EdenEast/nightfox.nvim'

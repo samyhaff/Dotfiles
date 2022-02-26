@@ -1,6 +1,7 @@
 local keymap = vim.api.nvim_set_keymap
 
 local opts = { noremap = true, silent = true }
+local term_opts = { silent = true }
 
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
@@ -38,11 +39,18 @@ keymap("n", "<leader>o", "<cmd>Telescope find_files<CR>", opts)
 keymap("n", "<leader>r", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>c", "<cmd>Telescope colorscheme<CR>", opts)
 
+-- terminal
+keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
 -- buffer_line
 keymap("n", "<TAB>", ":BufferLineCycleNext<CR>", opts)
 keymap("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opts)
 keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
+
 
 keymap("n", "<leader>b", ":silent !pandoc % -o %:r.pdf -V geometry:margin=2cm<CR>", opts)
 keymap("n", "<leader>p", ":silent !zathura %:r.pdf &<CR>", opts)
