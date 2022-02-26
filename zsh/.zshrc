@@ -104,6 +104,6 @@ export TEXINPUTS=".:~/Notes/cours/DATASIM_TP/packages:"
 
 # pluggins
 source ~/.config/lf/icons
-source ./.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
