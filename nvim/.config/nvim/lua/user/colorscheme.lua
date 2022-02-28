@@ -7,7 +7,7 @@ require('onedark').setup {
 }
 require('onedark').load()
 
-local colorscheme = "github_dark_default"
+local colorscheme = "moonfly"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then

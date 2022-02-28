@@ -33,15 +33,15 @@ colors:
     white:   '0xECEFF4'
 
 font:
-  size: 13
+  size: 10
   normal:
-    family: TamzenForPowerline
+    family: FiraCode
     style: regular
   bold:
-    family: TamzenForPowerline
+    family: FiraCode
     style: bold
   italic:
-    family: TamzenForPowerline
+    family: FiraCode
     style: italic
 
 window:

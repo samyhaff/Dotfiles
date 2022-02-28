@@ -72,6 +72,9 @@ return packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
 
   -- colorschemes
+  use 'w0ng/vim-hybrid'
+  use 'jacoborus/tender.vim'
+  use 'bluz71/vim-moonfly-colors'
   use 'navarasu/onedark.nvim'
   use 'folke/tokyonight.nvim'
   use 'rose-pine/neovim'
