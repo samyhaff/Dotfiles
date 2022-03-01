@@ -5,11 +5,6 @@ colors:
     background: %clbg%
     foreground: %clfg%
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: %clfg%
-    cursor: %clbg%
-
   # Normal colors
   normal:
     black:   %cl0%
