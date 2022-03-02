@@ -41,6 +41,6 @@ font:
 
 window:
   padding:
-    x: 2
+    x: 6
     y: 2
   dynamic_title: true

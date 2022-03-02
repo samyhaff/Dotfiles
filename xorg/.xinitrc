@@ -21,7 +21,7 @@ export PAGER="less"
 export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
 # export QT_SCALE_FACTOR=0.7
 
-xrandr | grep -q "HDMI-1 connected" && home
+xrandr | grep -q "HDMI-1 connected" && monitor extend
 
 nm-applet &
 dunst &

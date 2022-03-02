@@ -2,50 +2,45 @@
 colors:
   # Default colors
   primary:
-    background: '0x2E3440'
-    foreground: '0xD8DEE9'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0xD8DEE9'
-    cursor: '0x2E3440'
+    background: '0x0E2630'
+    foreground: '0xbad8d5'
 
   # Normal colors
   normal:
-    black:   '0x3B4252'
-    red:     '0xBF616A'
-    green:   '0xA3BE8C'
-    yellow:  '0xEBCB8B'
-    blue:    '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan:    '0x88C0D0'
-    white:   '0xE5E9F0'
+    black:   '0x0E2630'
+    red:     '0x2E7B83'
+    green:   '0x388A8E'
+    yellow:  '0x3E98A0'
+    blue:    '0x469798'
+    magenta: '0x61ACAA'
+    cyan:    '0x7DC1BB'
+    white:   '0xbad8d5'
 
   # Bright colors
   bright:
-    black:   '0x4C566A'
-    red:     '0xBF616A'
-    green:   '0xA3BE8C'
-    yellow:  '0xEBCB8B'
-    blue:    '0x81A1C1'
-    magenta: '0xB48EAD'
-    cyan:    '0x8FBCBB'
-    white:   '0xECEFF4'
+    black:   '0x829795'
+    red:     '0x2E7B83'
+    green:   '0x388A8E'
+    yellow:  '0x3E98A0'
+    blue:    '0x469798'
+    magenta: '0x61ACAA'
+    cyan:    '0x7DC1BB'
+    white:   '0xbad8d5'
 
 font:
-  size: 10
+  size: 13
   normal:
-    family: FiraCode
+    family: xos4 Terminus
     style: regular
   bold:
-    family: FiraCode
+    family: xos4 Terminus
     style: bold
   italic:
-    family: FiraCode
+    family: xos4 Terminus
     style: italic
 
 window:
   padding:
-    x: 4
-    y: 4
+    x: 6
+    y: 2
   dynamic_title: true
