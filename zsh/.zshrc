@@ -74,10 +74,16 @@ mkcd ()
       cd -P -- "$1"
 }
 
-launch() {
+launch () {
     "$@" &
     disown
     exit
+}
+
+rapport () {
+    mkdir rapport; mkdir rapport/images
+    cd rapport
+    cp $HOME/Notes/cours/DATASIM_TP/template.tex ./rapport.tex
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
