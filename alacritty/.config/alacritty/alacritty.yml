@@ -2,41 +2,41 @@
 colors:
   # Default colors
   primary:
-    background: '0x0E2630'
-    foreground: '0xbad8d5'
+    background: '0x0D1117'
+    foreground: '0xB3B1AD'
 
   # Normal colors
   normal:
-    black:   '0x0E2630'
-    red:     '0x2E7B83'
-    green:   '0x388A8E'
-    yellow:  '0x3E98A0'
-    blue:    '0x469798'
-    magenta: '0x61ACAA'
-    cyan:    '0x7DC1BB'
-    white:   '0xbad8d5'
+    black:   '0x484F58'
+    red:     '0xFF7B72'
+    green:   '0x3FB950'
+    yellow:  '0xD29922'
+    blue:    '0x58A6FF'
+    magenta: '0xBC8CFF'
+    cyan:    '0x39C5CF'
+    white:   '0xB1BAC4'
 
   # Bright colors
   bright:
-    black:   '0x829795'
-    red:     '0x2E7B83'
-    green:   '0x388A8E'
-    yellow:  '0x3E98A0'
-    blue:    '0x469798'
-    magenta: '0x61ACAA'
-    cyan:    '0x7DC1BB'
-    white:   '0xbad8d5'
+    black:   '0x6E7681'
+    red:     '0xFFA198'
+    green:   '0x56D364'
+    yellow:  '0xE3B341'
+    blue:    '0x79C0FF'
+    magenta: '0xD2A8FF'
+    cyan:    '0x56D4DD'
+    white:   '0xF0F6FC'
 
 font:
-  size: 13
+  size: 12
   normal:
-    family: xos4 Terminus
+    family: Ubuntu Mono
     style: regular
   bold:
-    family: xos4 Terminus
+    family: Ubuntu Mono
     style: bold
   italic:
-    family: xos4 Terminus
+    family: Ubuntu Mono
     style: italic
 
 window:

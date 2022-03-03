@@ -28,15 +28,15 @@ colors:
     white:   %cl15%
 
 font:
-  size: 13
+  size: 12
   normal:
-    family: xos4 Terminus
+    family: Ubuntu Mono
     style: regular
   bold:
-    family: xos4 Terminus
+    family: Ubuntu Mono
     style: bold
   italic:
-    family: xos4 Terminus
+    family: Ubuntu Mono
     style: italic
 
 window:
