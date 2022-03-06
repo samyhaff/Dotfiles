@@ -9,7 +9,7 @@ xset s 0 &
 xrdb -merge $HOME/.Xresources
 xsetroot -cursor_name left_ptr &
 
-export PATH="$PATH:/home/samy/Coding/scripts"
+export PATH="$PATH:/home/samy/bin"
 export PATH="$PATH:/home/samy/.local/bin"
 export GOPATH=/home/samy/Coding/go
 export EDITOR="nvim"

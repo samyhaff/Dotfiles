@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 toggleterm.setup({
-	size = 13,
+	size = 10,
 	open_mapping = [[<c-t>]],
 	hide_numbers = true,
 	shade_filetypes = {},
