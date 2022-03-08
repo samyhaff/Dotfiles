@@ -17,6 +17,7 @@ export VISUAL="nvim"
 export TERMINAL="st"
 export READER="zathura"
 export PAGER="less"
+export BROWSER="firefox"
 
 export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
 # export QT_SCALE_FACTOR=0.7
