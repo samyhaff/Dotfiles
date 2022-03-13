@@ -14,12 +14,14 @@ export PATH="$PATH:/home/samy/.local/bin"
 export GOPATH=/home/samy/Coding/go
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMINAL="st"
+export TERMINAL="alacritty"
 export READER="zathura"
 export PAGER="less"
 export BROWSER="firefox"
 
 export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
+export AWT_TOOLKIT=MToolkit
+export GDK_SCALE=1.3
 # export QT_SCALE_FACTOR=0.7
 
 xrandr | grep -q "HDMI-1 connected" && monitor extend
