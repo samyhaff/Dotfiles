@@ -4,7 +4,7 @@
 
 * Install [neovim nightly](https://github.com/neovim/neovim/wiki/Building-Neovim)
 * ...
-    $
+
 ## ZSH
 
 Clone those repos into `$HOME/.zsh`:
