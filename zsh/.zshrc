@@ -51,7 +51,6 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 # Aliases
-alias g=git
 alias mkdir="mkdir -pv"
 alias cp="cp -iv"
 alias mv="mv -iv"
@@ -67,6 +66,7 @@ alias la="ls -la"
 alias pacfind="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 alias parufind="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
 alias status="git status"
+alias stash="git stash"
 alias branch="git branch"
 alias checkout="git checkout"
 alias clone="git clone"

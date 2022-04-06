@@ -21,14 +21,10 @@ export BROWSER="firefox"
 
 export SUDO_ASKPASS="/home/samy/Coding/scripts/dpass"
 export AWT_TOOLKIT=MToolkit
-export GDK_SCALE=1.3
 # export QT_SCALE_FACTOR=0.7
 
 xrandr | grep -q "HDMI-1 connected" && monitor extend
-
-nm-applet &
-dunst &
-discord &
+# discord &
 firefox &
 TERMINAL &
 xbanish &
