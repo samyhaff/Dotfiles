@@ -1,4 +1,4 @@
-#include "/home/samy/.config/colorschemes/spacegray"
+#include "/home/samy/.config/colorschemes/tokyonight"
 
 ! terminal colors
 
@@ -62,7 +62,6 @@ zathura.background: FOREGROUND
 zathura.foreground: BACKGROUND
 
 Xft.dpi: 144
-Xcursor.size: 16
 Xft.antialias: 1
 Xft.hinting: 1
 Xft.autohint: 0
