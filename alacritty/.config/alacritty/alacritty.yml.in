@@ -28,15 +28,15 @@ colors:
     white:   %cl15%
 
 font:
-  size: 12
+  size: 13
   normal:
-    family: Ubuntu Mono
+    family: UbuntuMono Nerd Font
     style: regular
   bold:
-    family: Ubuntu Mono
+    family: UbuntuMono Nerd Font
     style: bold
   italic:
-    family: Ubuntu Mono
+    family: UbuntuMono Nerd Font
     style: italic
 
 draw_bold_text_with_bright_colors: true

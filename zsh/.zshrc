@@ -55,7 +55,7 @@ alias mkdir="mkdir -pv"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias ls="exa --icons --group-directories-first"
-alias slmake="rm config.h && make clean && sudo make clean install"
+alias slmake="rm config.h ; make clean && sudo make clean install"
 alias grep='grep --color=auto'
 # alias sudo='doas'
 alias v="nvim"
@@ -65,18 +65,6 @@ alias ll="ls -l"
 alias la="ls -la"
 alias pacfind="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 alias parufind="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
-alias status="git status"
-alias stash="git stash"
-alias branch="git branch"
-alias checkout="git checkout"
-alias clone="git clone"
-alias fetch="git fetch"
-alias pull="git pull origin"
-alias push="git push origin"
-alias addup="git add -u"
-alias addall="git add ."
-alias commit="git commit -m"
-alias add="git add"
 
 # custom functions
 mkcd ()
