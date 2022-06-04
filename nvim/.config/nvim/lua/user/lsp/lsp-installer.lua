@@ -21,6 +21,11 @@ lsp_installer.on_server_ready(function(server)
 	 	opts = vim.tbl_deep_extend("force", pyright_opts, opts)
 	 end
 
+	 if server.name == "texlab" then
+	 	local texlab_opts = require("user.lsp.settings.texlab")
+	 	opts = vim.tbl_deep_extend("force", texlab_opts, opts)
+	 end
+
 	 -- if server.name == "bashls" then
 	 -- 	local bashls_opts = require("user.lsp.settings.pyright")
 	 -- 	opts = vim.tbl_deep_extend("force", bashls_opts, opts)
