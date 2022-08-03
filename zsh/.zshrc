@@ -79,11 +79,11 @@ launch () {
     exit
 }
 
-rapport () {
-    mkdir rapport; mkdir rapport/images
-    cd rapport
-    cp $HOME/Notes/cours/DATASIM_TP/template.tex ./rapport.tex
-}
+# rapport () {
+#     mkdir rapport; mkdir rapport/images
+#     cd rapport
+#     cp $HOME/notes/cours/DATASIM_TP/template.tex ./rapport.tex
+# }
 
 n ()
 {
@@ -141,7 +141,7 @@ alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selectio
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
 # Latex preamble TP DATASIM
-export TEXINPUTS=".:~/Notes/cours/DATASIM_TP/packages:"
+export TEXINPUTS=".:~/notes/cours/ei2/DATASIM_TP/packages:"
 
 # pluggins
 # source ~/.config/lf/icons
@@ -149,3 +149,6 @@ source ~/.config/nnn/config
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
+
+# opam configuration
+[[ ! -r /home/samy/.opam/opam-init/init.zsh ]] || source /home/samy/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

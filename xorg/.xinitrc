@@ -2,6 +2,8 @@
 
 xrdb -merge $HOME/.Xresources
 
+echo 10 | tee /sys/class/backlight/amdgpu_bl0/brightness
+
 setxkbmap fr
 setxkbmap -option 'caps:ctrl_modifier' &
 xcape -e 'Caps_Lock=Escape' &
@@ -23,6 +25,7 @@ export SUDO_ASKPASS="$HOME/bin/dpass"
 xrandr | grep -q "HDMI-A-0 connected" && monitor extend
 
 pulseaudio &
+lxsession &
 dwmblocks &
 xbanish &
 firefox &

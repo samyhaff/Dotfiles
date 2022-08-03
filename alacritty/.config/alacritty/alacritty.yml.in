@@ -28,7 +28,7 @@ colors:
     white:   %cl15%
 
 font:
-  size: 13
+  size: 12
   normal:
     family: UbuntuMono Nerd Font
     style: regular

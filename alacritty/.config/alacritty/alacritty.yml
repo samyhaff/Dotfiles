@@ -2,41 +2,41 @@
 colors:
   # Default colors
   primary:
-    background: '0x1A1B26'
-    foreground: '0xA9B1D6'
+    background: '0x151515'
+    foreground: '0xffffff'
 
   # Normal colors
   normal:
-    black:   '0x1A1B26'
-    red:     '0xF7768E'
-    green:   '0x9ECE6A'
-    yellow:  '0xE0AF68'
-    blue:    '0x7AA2F7'
-    magenta: '0x9A7ECC'
-    cyan:    '0x4ABAAF'
-    white:   '0xACB0D0'
+    black:   '0x888888'
+    red:     '0xcf6a4c'
+    green:   '0x99ad6a'
+    yellow:  '0xfad07a'
+    blue:    '0x8197bf'
+    magenta: '0x8787af'
+    cyan:    '0x8fbfdc'
+    white:   '0x888888'
 
   # Bright colors
   bright:
-    black:   '0x4E5173'
-    red:     '0xF7768E'
-    green:   '0x9ECE6A'
-    yellow:  '0xE0AF68'
-    blue:    '0x7AA2F7'
-    magenta: '0x9A7ECC'
-    cyan:    '0x4ABAAF'
-    white:   '0xACB0D0'
+    black:   '0x525252'
+    red:     '0xff9d80'
+    green:   '0xc3e6ad'
+    yellow:  '0xffefbf'
+    blue:    '0xaccaff'
+    magenta: '0xc4c4ff'
+    cyan:    '0x80bfaf'
+    white:   '0xe8e8d3'
 
 font:
   size: 12
   normal:
-    family: Ubuntu Mono
+    family: UbuntuMono Nerd Font
     style: regular
   bold:
-    family: Ubuntu Mono
+    family: UbuntuMono Nerd Font
     style: bold
   italic:
-    family: Ubuntu Mono
+    family: UbuntuMono Nerd Font
     style: italic
 
 draw_bold_text_with_bright_colors: true
