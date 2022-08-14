@@ -5,4 +5,6 @@ set inputbar-bg "#282828"
 set statusbar-fg "#EBDBB2"
 set statusbar-bg "#282828"
 map i recolor
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
 set selection-clipboard clipboard
