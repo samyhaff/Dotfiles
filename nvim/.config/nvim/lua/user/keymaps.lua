@@ -38,6 +38,7 @@ keymap("n", "N", "Nzz", opts)
 keymap("n", "<leader>o", "<cmd>Telescope find_files<CR>", opts)
 keymap("n", "<leader>r", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>c", "<cmd>Telescope colorscheme<CR>", opts)
+keymap("n", "<leader>h", "<cmd>Telescope help_tags<CR>", opts)
 
 -- terminal
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
@@ -52,7 +53,7 @@ keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
 
-keymap("n", "<leader>b", ":TexlabBuild", opts)
+keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
 keymap("n", "<leader>p", ":silent !zathura %:r.pdf &<CR>", opts)
 keymap("n", "<leader>f", ":Format<CR>", opts)
 keymap("i", "<C-l>", "<c-g>u<Esc>[s1z=`]a<c-g>u", opts)
