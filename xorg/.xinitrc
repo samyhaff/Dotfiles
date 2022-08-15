@@ -24,6 +24,7 @@ export SUDO_ASKPASS="$HOME/bin/dpass"
 
 xrandr | grep -q "HDMI-A-0 connected" && monitor extend
 
+playerctld daemon &
 pulseaudio &
 lxsession &
 dwmblocks &
@@ -33,4 +34,5 @@ firefox &
 ~/.fehbg &
 picom &
 
-while type dwm >/dev/null ; do dwm && continue || break ; done
+# while type dwm >/dev/null ; do dwm && continue || break ; done
+exec dbus-launch dwm
