@@ -54,7 +54,7 @@ bindkey -v '^?' backward-delete-char
 alias mkdir="mkdir -pv"
 alias cp="cp -iv"
 alias mv="mv -iv"
-alias ls="exa --icons --group-directories-first"
+# alias ls="exa --icons --group-directories-first"
 alias slmake="rm config.h ; make clean && sudo make clean install"
 alias grep='grep --color=auto'
 # alias sudo='doas'

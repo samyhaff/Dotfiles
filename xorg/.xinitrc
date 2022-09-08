@@ -29,6 +29,7 @@ pulseaudio &
 lxsession &
 dwmblocks &
 xbanish &
+xmousepasteblock &
 firefox &
 # discord &
 ~/.fehbg &
