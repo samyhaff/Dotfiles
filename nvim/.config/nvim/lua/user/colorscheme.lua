@@ -2,12 +2,15 @@
 vim.g.tokyonight_style = "night"
 vim.g.material_style = "deep ocean"
 
-require('onedark').setup {
-    style = 'warmer'
-}
-require('onedark').load()
+-- local pywal = require('pywal')
+-- pywal.setup()
 
-local colorscheme = "moonfly"
+-- require('onedark').setup {
+--     style = 'warmer'
+-- }
+-- require('onedark').load()
+
+local colorscheme = "pywal"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then

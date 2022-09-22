@@ -76,7 +76,8 @@ return packer.startup(function(use)
     use "ellisonleao/gruvbox.nvim"
     use 'drewtempelmeyer/palenight.vim'
     use 'nekonako/xresources-nvim'
-    use 'sprockmonty/wal.vim'
+    -- use 'sprockmonty/wal.vim'
+    use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
     use 'w0ng/vim-hybrid'
     use 'jacoborus/tender.vim'
     use 'bluz71/vim-moonfly-colors'

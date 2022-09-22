@@ -26,14 +26,14 @@ xrandr | grep -q "HDMI-A-0 connected" && monitor extend
 
 playerctld daemon &
 pulseaudio &
+picom &
 lxsession &
 dwmblocks &
+~/.fehbg &
 xbanish &
 xmousepasteblock &
-firefox &
+# firefox &
 # discord &
-~/.fehbg &
-picom &
 
 # while type dwm >/dev/null ; do dwm && continue || break ; done
 exec dbus-launch dwm
