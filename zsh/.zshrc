@@ -33,8 +33,8 @@ export PAGER="less"
 
 # colors
 autoload -U colors && colors
-# PS1="%{$fg[blue]%}%~ %{$fg[red]%}$%b "
-PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[blue]%}@%{$fg[white]%}%M %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# PS1="%B%{$fg[red]%}[%{$fg[white]%}%n%{$fg[blue]%}@%{$fg[white]%}%M %{$fg[blue]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%F{cyan}%~ %f%F{green} %b "
 
 # completion
 zstyle ':completion:*' menu select
@@ -79,12 +79,6 @@ launch () {
     disown
     exit
 }
-
-# rapport () {
-#     mkdir rapport; mkdir rapport/images
-#     cd rapport
-#     cp $HOME/notes/cours/DATASIM_TP/template.tex ./rapport.tex
-# }
 
 n ()
 {
@@ -140,9 +134,6 @@ fcd() {
 alias getpath="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
-
-# Latex preamble TP DATASIM
-export TEXINPUTS=".:~/notes/cours/ei2/DATASIM_TP/packages:"
 
 # pluggins
 # source ~/.config/lf/icons

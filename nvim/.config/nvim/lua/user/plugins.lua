@@ -77,6 +77,7 @@ return packer.startup(function(use)
     use 'drewtempelmeyer/palenight.vim'
     use 'nekonako/xresources-nvim'
     -- use 'sprockmonty/wal.vim'
+    use {'decaycs/decay.nvim', as = 'decay'}
     use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
     use 'w0ng/vim-hybrid'
     use 'jacoborus/tender.vim'

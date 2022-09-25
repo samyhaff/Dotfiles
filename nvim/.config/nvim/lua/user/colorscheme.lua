@@ -1,6 +1,7 @@
 -- options for some colorschemes
 vim.g.tokyonight_style = "night"
 vim.g.material_style = "deep ocean"
+vim.g.catppuccin_flavour = "mocha"
 
 -- local pywal = require('pywal')
 -- pywal.setup()
@@ -10,7 +11,7 @@ vim.g.material_style = "deep ocean"
 -- }
 -- require('onedark').load()
 
-local colorscheme = "pywal"
+local colorscheme = "dark-decay"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
