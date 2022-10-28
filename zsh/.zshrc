@@ -58,6 +58,7 @@ alias ls="exa --icons --group-directories-first"
 # alias ls='ls --color'
 alias slmake="rm config.h ; make clean && sudo make clean install"
 alias grep='grep --color=auto'
+alias sxiv="nsxiv"
 # alias sudo='doas'
 alias v="nvim"
 alias vim="nvim"
