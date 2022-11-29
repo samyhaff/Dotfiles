@@ -26,12 +26,11 @@ xrandr | grep -q "HDMI-A-0 connected" && monitor extend
 
 playerctld daemon &
 pulseaudio &
-picom &
-lxsession &
-dwmblocks &
 ~/.fehbg &
+picom &
+dwmblocks &
+lxsession &
 xbanish &
-xmousepasteblock &
 # firefox &
 # discord &
 
