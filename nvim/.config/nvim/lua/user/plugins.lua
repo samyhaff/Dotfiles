@@ -54,6 +54,7 @@ return packer.startup(function(use)
     use 'lukas-reineke/indent-blankline.nvim'
     use 'norcalli/nvim-colorizer.lua'
     use 'akinsho/toggleterm.nvim'
+    use 'tpope/vim-fugitive'
 
     -- treesitter
     use {
