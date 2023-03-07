@@ -1,9 +1,9 @@
-set recolor-darkcolor "#B6BECA"
-set recolor-lightcolor "#101419"
-set inputbar-fg "#B6BECA"
-set inputbar-bg "#101419"
-set statusbar-fg "#B6BECA"
-set statusbar-bg "#101419"
+set recolor-darkcolor "#D4D4D4"
+set recolor-lightcolor "#1E1E1E"
+set inputbar-fg "#D4D4D4"
+set inputbar-bg "#1E1E1E"
+set statusbar-fg "#D4D4D4"
+set statusbar-bg "#1E1E1E"
 map i recolor
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen

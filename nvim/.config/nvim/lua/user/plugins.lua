@@ -23,7 +23,6 @@ vim.cmd [[
   augroup end
 ]]
 
--- Use a protected call so we don't error out on first use
 local packer = require "packer"
 
 -- Have packer use a popup window
@@ -55,6 +54,8 @@ return packer.startup(function(use)
     use 'norcalli/nvim-colorizer.lua'
     use 'akinsho/toggleterm.nvim'
     use 'tpope/vim-fugitive'
+    use 'adelarsq/neofsharp.vim'
+    use 'nvim-telescope/telescope.nvim'
 
     -- treesitter
     use {
@@ -66,15 +67,11 @@ return packer.startup(function(use)
     use 'lewis6991/gitsigns.nvim'
     use 'kyazdani42/nvim-tree.lua'
 
-    -- telescope
-    use 'nvim-telescope/telescope.nvim'
-
     -- colorschemes
     use "sainnhe/gruvbox-material"
     use "ellisonleao/gruvbox.nvim"
     use 'drewtempelmeyer/palenight.vim'
     use 'nekonako/xresources-nvim'
-    -- use 'sprockmonty/wal.vim'
     use {'decaycs/decay.nvim', as = 'decay'}
     use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
     use 'w0ng/vim-hybrid'

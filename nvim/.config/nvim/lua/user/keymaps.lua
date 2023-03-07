@@ -36,7 +36,7 @@ keymap("n", "N", "Nzz", opts)
 
 -- telescope
 keymap("n", "<leader>o", "<cmd>Telescope find_files<CR>", opts)
-keymap("n", "<leader>r", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>s", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>c", "<cmd>Telescope colorscheme<CR>", opts)
 keymap("n", "<leader>h", "<cmd>Telescope help_tags<CR>", opts)
 

@@ -22,7 +22,7 @@ export PAGER="less"
 export BROWSER="firefox"
 export SUDO_ASKPASS="$HOME/bin/dpass"
 
-xrandr | grep -q "HDMI-A-0 connected" && monitor extend
+xrandr | grep -q "DisplayPort-1 connected" && monitor extend
 
 playerctld daemon &
 pulseaudio &

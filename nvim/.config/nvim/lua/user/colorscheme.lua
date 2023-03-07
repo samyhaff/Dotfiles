@@ -11,6 +11,6 @@ require('onedark').setup {
 }
 require('onedark').load()
 
-local colorscheme = "dark-decay"
+local colorscheme = "codedark"
 
 vim.cmd("colorscheme " .. colorscheme)

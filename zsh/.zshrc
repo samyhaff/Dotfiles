@@ -119,11 +119,9 @@ nnn_cd()
 
 trap nnn_cd EXIT
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPS="--extende"
-
 # fzf
-export FZF_DEFAULT_OPTS='--border'
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
 setopt autocd
 
