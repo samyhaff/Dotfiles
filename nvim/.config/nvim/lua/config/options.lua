@@ -1,14 +1,11 @@
 local opt = vim.opt
 local cmd = vim.cmd
 
--- :help options
-opt.title = true
 opt.clipboard = "unnamedplus"
-opt.completeopt = { "menuone", "noselect" }
 opt.fileencoding = "utf-8"
+opt.completeopt = { "menuone", "noselect" }
 opt.ignorecase = true
 opt.mouse = "a"
-opt.pumheight = 10
 opt.showtabline = 2
 opt.showmode = false
 opt.smartcase = true
@@ -17,10 +14,7 @@ opt.splitbelow = true
 opt.splitright = true
 opt.swapfile = false
 opt.termguicolors = true
-opt.timeoutlen = 1000
 opt.undofile = true
-opt.updatetime = 300
-opt.writebackup = false
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.tabstop = 4
@@ -38,11 +32,9 @@ opt.showmatch = true
 opt.shortmess:append "c"
 opt.list = true
 opt.listchars:append("eol:↴")
+vim.o.updatetime = 250
+vim.o.timeout = true
+vim.o.timeoutlen = 300
 
 cmd [[au BufWritePre * :%s/\s\+$//e]]
--- cmd "set whichwrap+=<,>,[,],h,l"
 cmd [[set iskeyword+=-]]
-
--- vim.api.nvim_command([[
--- autocmd BufWritePost *.tex :silent !pdflatex %:r
--- ]])
