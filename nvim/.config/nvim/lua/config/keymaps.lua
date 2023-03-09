@@ -44,7 +44,6 @@ keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
 keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
-keymap("n", "<leader>f", ":Format<CR>", opts)
 
 -- keymap("n", "<leader>p", ":silent !zathura %:r.pdf &<CR>", opts)
 -- keymap("n", "<leader>m", ":!g++ %<CR>", opts)
