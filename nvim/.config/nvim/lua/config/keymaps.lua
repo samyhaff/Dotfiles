@@ -17,7 +17,7 @@ keymap("n", "<C-Down>", ":resize -2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- keymap("n", "<leader>a", "<C-^>", opts)
+keymap("n", "<leader>a", "<C-^>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>x", ":bd<CR>", opts)
 
@@ -44,7 +44,8 @@ keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
 keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
--- keymap("n", "<leader>p", ":silent !zathura %:r.pdf &<CR>", opts)
 keymap("n", "<leader>f", ":Format<CR>", opts)
+
+-- keymap("n", "<leader>p", ":silent !zathura %:r.pdf &<CR>", opts)
 -- keymap("n", "<leader>m", ":!g++ %<CR>", opts)
 -- keymap("n", "<leader>r", ":!cat input | ./a.out<CR>", opts)

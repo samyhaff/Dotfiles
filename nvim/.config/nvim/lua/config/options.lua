@@ -13,11 +13,12 @@ opt.smartindent = true
 opt.splitbelow = true
 opt.splitright = true
 opt.swapfile = false
-opt.termguicolors = true
 opt.undofile = true
+opt.backup = false
 opt.expandtab = true
 opt.shiftwidth = 4
 opt.tabstop = 4
+opt.termguicolors = true
 opt.cursorline = true
 opt.number = true
 opt.relativenumber = true
@@ -26,13 +27,13 @@ opt.wrap = false
 opt.scrolloff = 2
 opt.sidescrolloff = 0
 opt.incsearch = true
-opt.hlsearch = false
+opt.hlsearch = true
 opt.bg = "dark"
 opt.showmatch = true
 opt.shortmess:append "c"
 opt.list = true
 opt.listchars:append("eol:↴")
-vim.o.updatetime = 250
+vim.o.updatetime = 50
 vim.o.timeout = true
 vim.o.timeoutlen = 300
 
