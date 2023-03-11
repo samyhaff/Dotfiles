@@ -1,9 +1,2 @@
-nvim/.config/nvim_old/undodir/
-nvim/.config/nvim_old/plugged/
-nvim/.config/nvim/plugin/packer_compiled.lua
+nvim/.config/nvim/spell/
 nvim/.config/nvim/plugin/
-wallpapers/Wallpapers/*
-!wallpapers/Wallpapers/*.jpg
-!wallpapers/Wallpapers/*.png
-!wallpapers/Wallpapers/*.jpeg
-!wallpapers/Wallpapers/*.webp
