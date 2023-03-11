@@ -31,12 +31,6 @@ keymap("n", "<leader>s", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>c", "<cmd>Telescope colorscheme<CR>", opts)
 keymap("n", "<leader>h", "<cmd>Telescope help_tags<CR>", opts)
 
--- terminal
-keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
-keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
-keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
-keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
 -- buffer_line
 keymap("n", "<TAB>", ":BufferLineCycleNext<CR>", opts)
 keymap("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opts)
