@@ -74,5 +74,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval $(/opt/homebrew/bin/brew shellenv)
