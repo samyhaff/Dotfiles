@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'tomasiser/vim-code-dark'
+  use 'folke/tokyonight.nvim'
   use {
     'numToStr/Comment.nvim',
     config = function()
