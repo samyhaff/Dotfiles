@@ -1,7 +1,14 @@
-vim.cmd [[packadd packer.nvim]]
+vim.cmd([[
+  augroup packer_auto_sync
+    autocmd!
+    autocmd BufWritePost packer.lua source <afile> | PackerSync
+  augroup end
+]])
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'chentoast/marks.nvim'
+  use 'github/copilot.vim'
   use 'ggandor/leap.nvim'
   use 'tpope/vim-sleuth'
   use 'goolord/alpha-nvim'
@@ -15,6 +22,7 @@ return require('packer').startup(function(use)
   }
   use 'tomasiser/vim-code-dark'
   use 'folke/tokyonight.nvim'
+  use 'shaunsingh/nord.nvim'
   use {
     'numToStr/Comment.nvim',
     config = function()
@@ -26,6 +34,7 @@ return require('packer').startup(function(use)
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use {'akinsho/bufferline.nvim', requires = 'nvim-tree/nvim-web-devicons'}
+  use 'nvim-treesitter/nvim-treesitter-context'
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",

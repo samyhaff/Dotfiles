@@ -38,6 +38,8 @@ keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
 keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
+keymap("n", "<leader>g", ":Git<CR>", opts)
 
--- keymap("n", "<leader>m", ":!g++ %<CR>", opts)
--- keymap("n", "<leader>r", ":!cat input | ./a.out<CR>", opts)
+-- copilot
+vim.g.copilot_no_tab_map = true
+vim.api.nvim_set_keymap("i", "<C-Space>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
