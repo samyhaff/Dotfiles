@@ -17,13 +17,14 @@ stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
 
 # prompt
-# autoload -U promptinit
-# promptinit
-# prompt spaceship
-
-# prompt
 autoload -U colors && colors
-PS1="%B%F{cyan}%~ %f%F{green}λ %b "
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats 'on %b '
+precmd() { vcs_info }
+
+setopt PROMPT_SUBST
+PROMPT='%B%F{cyan}%~ %f%F{%(?.green.red)}λ%b %F{yellow}${vcs_info_msg_0_}%f'
 
 # completion
 zstyle ':completion:*' menu select
@@ -44,7 +45,6 @@ alias mkdir="mkdir -pv"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias ls="exa --icons --group-directories-first"
-# alias ls='ls --color'
 alias grep='grep --color=auto'
 alias v="nvim"
 alias vim="nvim"
@@ -65,8 +65,6 @@ setopt autocd
 fcd() {
     cd "$(fd --type d | fzf)"
 }
-
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
 
 # pluggins
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
