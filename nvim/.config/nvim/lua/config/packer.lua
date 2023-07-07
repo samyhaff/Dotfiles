@@ -23,6 +23,7 @@ return require('packer').startup(function(use)
   use 'tomasiser/vim-code-dark'
   use 'folke/tokyonight.nvim'
   use 'shaunsingh/nord.nvim'
+  use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
   use {
     'numToStr/Comment.nvim',
     config = function()
