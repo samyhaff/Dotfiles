@@ -39,3 +39,4 @@ vim.o.timeoutlen = 300
 
 cmd [[au BufWritePre * :%s/\s\+$//e]]
 cmd [[set iskeyword+=-]]
+cmd [[autocmd BufRead,BufNewFile *.tex setlocal spell]]
