@@ -11,6 +11,7 @@ zstyle :compinstall filename '/home/samy/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
