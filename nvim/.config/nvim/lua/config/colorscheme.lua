@@ -1,7 +1,12 @@
-local colorscheme = "github_dark_default"
+local colorscheme = "onedark"
 
-require("tokyonight").setup({
-    style = "night"
-})
+-- require("tokyonight").setup({
+--     style = "night"
+-- })
+
+require('onedark').setup {
+    style = 'light'
+}
+require('onedark').load()
 
 vim.cmd.colorscheme(colorscheme)

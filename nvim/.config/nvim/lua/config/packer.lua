@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   }
   use 'tomasiser/vim-code-dark'
   use 'folke/tokyonight.nvim'
+  use 'navarasu/onedark.nvim'
   use 'shaunsingh/nord.nvim'
   use ({ 'projekt0n/github-nvim-theme', tag = 'v0.0.7' })
   use {
@@ -43,6 +44,7 @@ return require('packer').startup(function(use)
   use 'adelarsq/neofsharp.vim'
   use 'kyazdani42/nvim-tree.lua'
   use "windwp/nvim-autopairs"
+  use "saecki/crates.nvim"
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',

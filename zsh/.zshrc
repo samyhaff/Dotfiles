@@ -45,7 +45,7 @@ bindkey -v '^?' backward-delete-char
 alias mkdir="mkdir -pv"
 alias cp="cp -iv"
 alias mv="mv -iv"
-alias ls="exa --icons --group-directories-first"
+alias ls="lsd --icon always --group-directories-first"
 alias grep='grep --color=auto'
 alias v="nvim"
 alias vim="nvim"

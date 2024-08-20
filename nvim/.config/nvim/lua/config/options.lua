@@ -28,7 +28,7 @@ opt.scrolloff = 2
 opt.sidescrolloff = 0
 opt.incsearch = true
 opt.hlsearch = false
-opt.bg = "dark"
+opt.bg = "light"
 opt.showmatch = true
 opt.shortmess:append "c"
 opt.list = true
