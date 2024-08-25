@@ -5,7 +5,7 @@ local term_opts = { silent = true }
 
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.maplocalleader = "\\"
 
 -- split
 keymap("n", "<C-h>", "<C-w>h", opts)
