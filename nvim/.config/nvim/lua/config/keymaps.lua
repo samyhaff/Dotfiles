@@ -37,7 +37,7 @@ keymap("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opts)
 keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
-keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
+-- keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
 keymap("n", "<leader>g", ":Git<CR>", opts)
 
 -- copilot

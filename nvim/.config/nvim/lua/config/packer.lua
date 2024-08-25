@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   use "windwp/nvim-autopairs"
   use "saecki/crates.nvim"
+  use "lervag/vimtex"
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
