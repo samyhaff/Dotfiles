@@ -18,7 +18,7 @@ keymap("n", "<C-h>h", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-l>l", ":vertical resize +2<CR>", opts)
 
 keymap("n", "<leader>a", "<C-^>", opts)
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>e", ":Neotree toggle <CR>", opts)
 keymap("n", "<leader>x", ":bd<CR>", opts)
 
 keymap("n", "Y", "y$", opts)
@@ -39,7 +39,3 @@ keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
 -- keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
 keymap("n", "<leader>g", ":Git<CR>", opts)
-
--- copilot
-vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap("i", "<C-Space>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
