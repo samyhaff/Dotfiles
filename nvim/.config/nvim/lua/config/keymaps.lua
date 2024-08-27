@@ -5,7 +5,7 @@ local opts = { noremap = true, silent = true }
 
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = ","
 
 -- split
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -37,5 +37,5 @@ keymap("n", "<S-TAB>", ":BufferLineCyclePrev<CR>", opts)
 keymap("n", "<leader>j", ":BufferLineMoveNext<CR>", opts)
 keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
--- keymap("n", "<leader>b", ":TexlabBuild<CR>", opts)
-keymap("n", "<leader>g", ":Git<CR>", opts)
+-- Oil
+keymap("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
