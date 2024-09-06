@@ -67,6 +67,14 @@ fcd() {
     cd "$(fd --type d | fzf)"
 }
 
+fopen() {
+    open "$(fd --type f | fzf)"
+}
+
+zopen() {
+    open "$(fd --type f . ~/Zotero/storage | fzf)"
+}
+
 # pluggins
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
