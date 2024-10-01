@@ -72,7 +72,17 @@ fopen() {
 }
 
 zopen() {
-    open "$(fd --type f . ~/Zotero/storage | fzf)"
+    file=$(fd --type f . ~/Zotero/storage | fzf)
+    if [ -n "$file" ]; then
+        open "$file"
+    fi
+}
+
+zcp() {
+    file=$(fd --type f . ~/Zotero/storage | fzf)
+    if [ -n "$file" ]; then
+        cp "$file" ~/Downloads
+    fi
 }
 
 # pluggins
