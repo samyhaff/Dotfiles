@@ -39,3 +39,6 @@ keymap("n", "<leader>k", ":BufferLineMovePrev<CR>", opts)
 
 -- Oil
 keymap("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+-- Todo
+keymap("n", "<leader>t", "<CMD>TodoTelescope<CR>", { desc = "Open Todo" })
