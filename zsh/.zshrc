@@ -71,6 +71,8 @@ fopen() {
     open "$(fd --type f | fzf)"
 }
 
+############### Phd stuff ################
+
 zopen() {
     file=$(fd --type f . ~/Zotero/storage | fzf)
     if [ -n "$file" ]; then
@@ -79,11 +81,40 @@ zopen() {
 }
 
 zcp() {
+    dir="$1"
     file=$(fd --type f . ~/Zotero/storage | fzf)
     if [ -n "$file" ]; then
-        cp "$file" ~/Downloads
+        cp "$file" "$dir"
     fi
 }
+
+sshg() {
+    gpu_number="$1"
+    ssh shaffoudhi@gpu"$1".enst.fr
+}
+
+sshl() {
+    ssh shaffoudhi@lame"$1".enst.fr
+}
+
+check_gpus() {
+    for X in {1..9}; do
+        echo "Checking gpu${X}.enst.fr..."
+        ssh -o ConnectTimeout=5 "shaffoudhi@gpu${X}.enst.fr" \
+            nvidia-smi --query-gpu=index,memory.used,memory.total --format=csv,noheader,nounits 2>/dev/null |
+        if [[ $? -eq 0 ]]; then
+            echo "Memory usage on gpu${X}.enst.fr:"
+            while IFS=',' read -r INDEX USED TOTAL; do
+                echo "  GPU ${INDEX}: ${USED}MiB / ${TOTAL}MiB"
+            done
+        else
+            echo "Could not connect to gpu${X}.enst.fr."
+        fi
+        echo "-----------------------------------"
+    done
+}
+
+##########################################
 
 # pluggins
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
