@@ -97,10 +97,10 @@ sshl() {
     ssh shaffoudhi@lame"$1".enst.fr
 }
 
-check_gpus() {
+gpustats() {
     for X in {1..9}; do
         echo "Checking gpu${X}.enst.fr..."
-        ssh -o ConnectTimeout=5 "shaffoudhi@gpu${X}.enst.fr" \
+        timeout 10s ssh -o ConnectTimeout=5 "shaffoudhi@gpu${X}.enst.fr" \
             nvidia-smi --query-gpu=index,memory.used,memory.total --format=csv,noheader,nounits 2>/dev/null |
         if [[ $? -eq 0 ]]; then
             echo "Memory usage on gpu${X}.enst.fr:"
