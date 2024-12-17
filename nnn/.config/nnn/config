@@ -1,4 +1,0 @@
-export NNN_COLORS='1234'
-export NNN_BMS="d:$HOME/Downloads;n:$HOME/notes;s:$HOME/screenshots"
-export NNN_PLUG='o:fzopen;p:preview-tabbed'
-export NNN_FIFO=/tmp/nnn.fifo
