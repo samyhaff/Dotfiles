@@ -120,22 +120,5 @@ gpustats() {
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-eval $(/opt/homebrew/bin/brew shellenv)
-
-# >>> conda initialize >>>
-export CONDA_AUTO_ACTIVATE_BASE=false
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/samyhaffoudhi/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/samyhaffoudhi/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/samyhaffoudhi/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/samyhaffoudhi/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
