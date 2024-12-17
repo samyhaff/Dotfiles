@@ -1,2 +1,2 @@
-local colorscheme = "onedark"
+local colorscheme = "nord"
 vim.cmd.colorscheme(colorscheme)
