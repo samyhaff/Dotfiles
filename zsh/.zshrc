@@ -53,6 +53,8 @@ alias tree="tree -C"
 alias ll="ls -l"
 alias la="ls -la"
 
+export PATH=$PATH:$HOME/.local/bin
+
 # custom functions
 mkcd ()
 {
@@ -122,3 +124,18 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^ ' autosuggest-accept
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/samy/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/samy/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/samy/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/samy/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<

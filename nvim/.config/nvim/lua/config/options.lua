@@ -39,7 +39,7 @@ vim.o.timeoutlen = 300
 
 cmd [[au BufWritePre * :%s/\s\+$//e]]
 cmd [[set iskeyword+=-]]
-cmd [[autocmd BufRead,BufNewFile *.tex setlocal spell]] -- Enable spell check for tex files
+cmd [[autocmd BufRead,BufNewFile *.tex,*.md,*.typ setlocal spell]] -- Enable spell check for specific file types
 
 -- Automatically format python files on save
 vim.api.nvim_create_autocmd(

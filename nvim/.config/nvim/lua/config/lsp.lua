@@ -33,6 +33,12 @@ require('mason-lspconfig').setup({
     },
 })
 
+require("lspconfig")["tinymist"].setup {
+    settings = {
+        exportPdf = "onSave",
+    }
+}
+
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
