@@ -36,6 +36,7 @@ opt.listchars:append("eol:↴")
 vim.o.updatetime = 50
 vim.o.timeout = true
 vim.o.timeoutlen = 300
+vim.o.autoread = true
 
 cmd [[au BufWritePre * :%s/\s\+$//e]]
 cmd [[set iskeyword+=-]]
@@ -47,7 +48,7 @@ vim.api.nvim_create_autocmd(
     {
         pattern = "*.py",
         callback = function()
-            vim.cmd("silent !black --quiet %")
+            vim.cmd("silent !uvx black --quiet %")
             vim.cmd("edit")
         end,
     }
