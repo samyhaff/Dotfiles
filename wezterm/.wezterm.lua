@@ -1,30 +1,24 @@
 local wezterm = require 'wezterm'
-
 local config = wezterm.config_builder()
-
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 10.5
-
 config.enable_tab_bar = false
-
 config.window_padding = {
   left = 8,
   right = 8,
   top = 8,
   bottom = 8,
 }
-
 config.colors = {
-    foreground = "#e6edf3",
-    background = "#0d1117",
-    cursor_bg = "#2f81f7",
-    cursor_border = "#2f81f7",
-    cursor_fg = "#2f81f7",
-    selection_bg = "#e6edf3",
-    selection_fg = "#0d1117",
-
-    ansi = {"#484f58","#ff7b72","#3fb950","#d29922","#58a6ff","#bc8cff","#39c5cf","#b1bac4"},
-    brights = {"#6e7681","#ffa198","#56d364","#e3b341","#79c0ff","#d2a8ff","#56d4dd","#ffffff"},
+    foreground = "#24292e",
+    background = "#ffffff",
+    cursor_bg = "#0366d6",
+    cursor_border = "#0366d6",
+    cursor_fg = "#ffffff",
+    selection_bg = "#24292e",
+    selection_fg = "#ffffff",
+    ansi = {"#24292e","#d73a49","#28a745","#6f42c1","#0366d6","#6f42c1","#1b7ec2","#e1e4e8"},
+    brights = {"#6a737d","#f97583","#85e89d","#b392f0","#79b8ff","#c8e1ff","#56d4dd","#ffffff"},
 }
-
+config.warn_about_missing_glyphs = false
 return config

@@ -1,46 +1,53 @@
-local lsp_zero = require('lsp-zero')
+-- keymaps that only make sense when a language server is attached
+vim.api.nvim_create_autocmd('LspAttach', {
+    desc = 'LSP actions',
+    callback = function(event)
+        local opts = {buffer = event.buf}
 
--- lsp_attach is where you enable features that only work
--- if there is a language server active in the file
-local lsp_attach = function(client, bufnr)
-    local opts = {buffer = bufnr}
-
-    vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
-    vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
-    vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
-    vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', opts)
-    vim.keymap.set('n', 'go', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
-    vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
-    vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
-    vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
-    vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
-    vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
-    vim.keymap.set("n", 'gl', vim.diagnostic.open_float, opts)
-end
-
-lsp_zero.extend_lspconfig({
-    sign_text = true,
-    lsp_attach = lsp_attach,
-    capabilities = require('cmp_nvim_lsp').default_capabilities(),
+        vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
+        vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
+        vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
+        vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', opts)
+        vim.keymap.set('n', 'go', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
+        vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
+        vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
+        vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
+        vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
+        vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
+        vim.keymap.set('n', 'gl', vim.diagnostic.open_float, opts)
+    end,
 })
 
-require('mason').setup({})
-require('mason-lspconfig').setup({
-    handlers = {
-        function(server_name)
-            require('lspconfig')[server_name].setup({})
-        end,
+vim.diagnostic.config({
+    signs = {
+        text = {
+            [vim.diagnostic.severity.ERROR] = '✘',
+            [vim.diagnostic.severity.WARN] = '▲',
+            [vim.diagnostic.severity.HINT] = '⚑',
+            [vim.diagnostic.severity.INFO] = '»',
+        },
     },
 })
 
-require("lspconfig")["tinymist"].setup {
+-- extra capabilities advertised to every server, shared with nvim-cmp
+vim.lsp.config('*', {
+    capabilities = require('cmp_nvim_lsp').default_capabilities(),
+})
+
+vim.lsp.config('tinymist', {
     settings = {
-        exportPdf = "onSave",
-    }
-}
+        exportPdf = 'onSave',
+    },
+})
+
+require('mason').setup({})
+
+-- mason-lspconfig enables every server installed through mason
+require('mason-lspconfig').setup({
+    ensure_installed = {},
+})
 
 local cmp = require('cmp')
-local cmp_action = require('lsp-zero').cmp_action()
 
 cmp.setup({
     sources = {
@@ -58,8 +65,20 @@ cmp.setup({
         ['<C-Space>'] = cmp.mapping.complete(),
 
         -- Navigate between snippet placeholder
-        ['<C-f>'] = cmp_action.vim_snippet_jump_forward(),
-        ['<C-b>'] = cmp_action.vim_snippet_jump_backward(),
+        ['<C-f>'] = cmp.mapping(function(fallback)
+            if vim.snippet.active({direction = 1}) then
+                vim.snippet.jump(1)
+            else
+                fallback()
+            end
+        end, {'i', 's'}),
+        ['<C-b>'] = cmp.mapping(function(fallback)
+            if vim.snippet.active({direction = -1}) then
+                vim.snippet.jump(-1)
+            else
+                fallback()
+            end
+        end, {'i', 's'}),
 
         -- Scroll up and down in the completion documentation
         ['<C-u>'] = cmp.mapping.scroll_docs(-4),

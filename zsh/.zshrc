@@ -53,6 +53,7 @@ alias tree="tree -C"
 alias ll="ls -l"
 alias la="ls -la"
 alias ipe="ipe & disown"
+alias copy="xclip -sel clip"
 
 export PATH=$PATH:$HOME/.local/bin
 
@@ -91,31 +92,31 @@ zcp() {
     fi
 }
 
-sshg() {
-    gpu_number="$1"
-    ssh shaffoudhi@gpu"$1".enst.fr
-}
-
-sshl() {
-    ssh shaffoudhi@lame"$1".enst.fr
-}
-
-gpustats() {
-    for X in {1..9}; do
-        echo "Checking gpu${X}.enst.fr..."
-        timeout 10s ssh -o ConnectTimeout=5 "shaffoudhi@gpu${X}.enst.fr" \
-            nvidia-smi --query-gpu=index,memory.used,memory.total --format=csv,noheader,nounits 2>/dev/null |
-        if [[ $? -eq 0 ]]; then
-            echo "Memory usage on gpu${X}.enst.fr:"
-            while IFS=',' read -r INDEX USED TOTAL; do
-                echo "  GPU ${INDEX}: ${USED}MiB / ${TOTAL}MiB"
-            done
-        else
-            echo "Could not connect to gpu${X}.enst.fr."
-        fi
-        echo "-----------------------------------"
-    done
-}
+# sshg() {
+#     gpu_number="$1"
+#     ssh shaffoudhi@gpu"$1".enst.fr
+# }
+#
+# sshl() {
+#     ssh shaffoudhi@lame"$1".enst.fr
+# }
+#
+# gpustats() {
+#     for X in {1..9}; do
+#         echo "Checking gpu${X}.enst.fr..."
+#         timeout 10s ssh -o ConnectTimeout=5 "shaffoudhi@gpu${X}.enst.fr" \
+#             nvidia-smi --query-gpu=index,memory.used,memory.total --format=csv,noheader,nounits 2>/dev/null |
+#         if [[ $? -eq 0 ]]; then
+#             echo "Memory usage on gpu${X}.enst.fr:"
+#             while IFS=',' read -r INDEX USED TOTAL; do
+#                 echo "  GPU ${INDEX}: ${USED}MiB / ${TOTAL}MiB"
+#             done
+#         else
+#             echo "Could not connect to gpu${X}.enst.fr."
+#         fi
+#         echo "-----------------------------------"
+#     done
+# }
 
 ##########################################
 
