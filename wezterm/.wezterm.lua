@@ -21,4 +21,5 @@ config.colors = {
     brights = {"#6a737d","#f97583","#85e89d","#b392f0","#79b8ff","#c8e1ff","#56d4dd","#ffffff"},
 }
 config.warn_about_missing_glyphs = false
+-- config.enable_wayland = false
 return config
