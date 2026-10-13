@@ -35,4 +35,4 @@ palette = 13=#c8e1ff
 palette = 14=#56d4dd
 palette = 15=#ffffff
 
-mouse-scroll-multiplier = discrete:1
+mouse-scroll-multiplier = 0.5
